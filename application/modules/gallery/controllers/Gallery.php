@@ -15,10 +15,11 @@ class Gallery extends MX_Controller
         parent::__construct();
 
         $this->load->model('Mdl_gallery');
+        $this->load->model('admin/Mdl_admin');
 
     }
 
-    function index()
+   public  function index()
     {
        /* $data['jobs'] = $this->Mdl_admin->getPostJobs();*/
         $this->load->view('header');
@@ -26,5 +27,18 @@ class Gallery extends MX_Controller
         $this->load->view('footer');
     }
 
+  public function album(){
+      $data['album']=$this->Mdl_admin->getAblums();
+      $this->load->view('header_album');
+      $this->load->view('album',$data);
+      $this->load->view('footer_album');
+  }
 
+  public function albumPhoto($id){
+
+      $data['photo']=$this->Mdl_admin->getPhoto($id);
+      $this->load->view('header_album');
+      $this->load->view('album_photo',$data);
+      $this->load->view('footer_album');
+  }
 }

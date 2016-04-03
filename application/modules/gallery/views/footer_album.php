@@ -2,9 +2,10 @@
 /**
  * Created by PhpStorm.
  * User: Nitesh
- * Date: 4/2/2016
- * Time: 2:53 PM
+ * Date: 4/3/2016
+ * Time: 1:33 PM
  */
+
 ?>
 
 <!-- Footer -->
@@ -41,10 +42,10 @@
                         <ul class="list-links">
                             <li><a href="school.html">School</a></li>
                             <li><a href="event.html">Events</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="about-us.html">About us</a></li>
                             <li><a href="news.html">News</a></li>
                             <li><a href="contact-us.html">Contact us</a></li>
-                            <!-- <li><a href="#">Admission Procedure</a></li> -->
+                            <li><a href="#">Admission Procedure</a></li>
                         </ul>
                     </aside>
                 </div><!-- /.col-md-3 -->
@@ -54,16 +55,13 @@
                         <p>Ursuline Convent School is a Christian Institution established and administered by the religious Congregation of the Ursuline Sister of Mary Immaculate, founded on 17th February, 1649 at Piacenza in Italy by Blessed Mother Brigida Morello.
                         </p>
                         <div>
-                            <a href="news.html" class="read-more">All News</a>
+                            <a href="" class="read-more">All News</a>
                         </div>
                     </aside>
                 </div><!-- /.col-md-3 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
-        <!--        my code new img-->
-        <div class="background">
-
-            <!--            <img style="width:100%" src="assets/img/copy.jpg" class="" alt=""></div>-->
+        <div class="background"><img src="assets/img/background-city.png" class="" alt=""></div>
     </section><!-- /#footer-content -->
 
     <section id="footer-bottom">
@@ -76,85 +74,11 @@
 
 </footer>
 <!-- end Footer -->
-<!--modal window-->
 
-<div id="about_school" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">About School</h4>
-            </div>
-            <div class="modal-body"  style="overflow:auto; max-height: calc(100vh - 212px);">
-                <img src="assets/img/copy.jpg" alt=""  class="about_custom" />
-                <p><strong>Ursuline Convent School</strong> is a Christian Institution established and administered by the religious Congregation of the Ursuline <strong>Sister of Mary Immaculate</strong>, founded on 17th February, 1649 at Piacenza in Italy by Blessed Mother Brigida Morello. The School aims at the education of the Catholic community around and extends its service to members of other communities to the extent possible. The school stands for academic excellence, development of skills and character-formation based on the love of God and the service of the people as modeled in Jesus Christ with a view to train citizens for remarkable all-round development and sincere commitment to God and country. Value Education given to all students aims at inculcating in them right values and attitudes.</p>
-
-                <p><strong>THE CURRICULUM</strong><br /><br />The school is affiliated to the <strong>CBSE (Central Board of Secondary Education, New Delhi).</strong> <br /><br />Formal teaching begins at class 1 level where subjects like English, Hindi, Maths, Environmental Studies, Art and Craft and Computer Studies are introduced. Sanskrit as third language is introduced at class V. <strong>NCERT</strong> syllabus is followed in the middle school classes and <strong>CBSE</strong> syllabus is followed in the senior classes.<br /><br />The school conducts special courses in <strong>physical training, Athletics, Karate, Music and Dance, Regular literary activities, picnics and Excursion </strong>form an integral part of the curriculum.<br /><br />The <strong>medium of instruction is English</strong> and the school will eventually provide education to both boys and girls for a 12-year course as under:<br /><br />Class I to V - Junior School<br />Class VI to VIII - Middle School<br />Class IX to XII - Senior School</p>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modals  -->
-
-<!-- Modal HTML -->
-<div id="pri-modal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Message by Principal</h4>
-            </div>
-            <div class="modal-body"  style="overflow:auto; max-height: calc(100vh - 212px);">
-                <h3 style="text-align: center;">&nbsp;PASSION IN A STUDENT&rsquo;S LIFE</h3>
-                <p style="text-align: center;"><strong>"Develop a passion for learning. If you do, you will never cease to grow."&nbsp;</strong><br /><em>--Anthony J. D'Angelo</em></p>
-                <p>Dear Parents and well-wishers&nbsp;</p>
-                <p>Wish you all a very blessed New Year! May it be a year of grace, peace and everlasting joy for every one of us!</p>
-                <p>I would like to share one of the most disturbing concerns of mine&hellip; In recent times, we have experienced drastic changes in every walk of life; be it the life-style, the family life, the professional life, the religion, the education, etc&hellip; It&rsquo;s not the &lsquo;Change&rsquo; that disturbs me. As I know very well that Change is inevitable for Growth. What disturbs me is&hellip; the &lsquo;casual approach&rsquo; that I see in students towards studies these days. And it is quite evident from a decline in grades of many students. I miss that die hard spirit, that burning the mid-night oil, that passion to excel, and that love for learning among students.</p>
-                <p>Our education system is right now in a stage of transition. So many good things are being incorporated, and also some things of &lsquo;essence&rsquo; are getting diluted. And this surely must be disturbing all the educationists as well as the parents. I would like to make an appeal to the teachers and the parents to help our children retain the zealous spirit of a student&rsquo;s life and especially a deep passion for learning. As I believe that no great heights can be achieved without this &lsquo;passion&rsquo;.</p>
-                <p>I wish that our every student inculcates this &lsquo;passion&rsquo;; not merely to improve their grades, but to become that unique adult that one is destined to be, for the glory of God and of the nation. God bless us!</p>
-                <p style="text-align: right;"><strong>Sr. Nirupa</strong></p>
-                <p style="text-align: right;">(Principal)</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
 </div>
 
 
-<!-- ================================================================ -->
 
-<div id="vice-modal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Message by Vice-Principal</h4>
-            </div>
-            <div class="modal-body" >
-
-                <h4 style="text-align: center;">&ldquo;Beautiful things are not always good but good things are always beautiful&rdquo; </h4>
-
-                <p>School is a place where one learn&rsquo;s&nbsp; about the wholeness of life&hellip;. Accumulation of information &nbsp;the duality of carrying the self&nbsp;lightlyand knowing the self&nbsp;deeply&nbsp;&nbsp; a journey towards the wholeness &hellip;..we are here with a mission, a mission with difference to inculcate values, to retain the Ursuline values of discipline, respect and sincerity in all our Endeavour&rsquo;s . To live its values in this comparatative and judgmental age were&nbsp;reward&nbsp;and&nbsp;punishment&nbsp;are the &nbsp;only motivation. Let us set our goal with a difference and focus&nbsp;&nbsp; our &lsquo;aim&rsquo; rightly to&nbsp;achieve&nbsp;. &nbsp;let us arise and awake&nbsp; because every test in our life makes us&nbsp;bitter&nbsp;or&nbsp;better comes to&nbsp;make us&rsquo;or&nbsp;break us. But one thing is sure &lsquo;&nbsp;I can If I want&rsquo;&hellip;. everything is in my hand..Let us strive together to reach our destination successfully May God Bless Us </p>
-                <p>&nbsp;</p>
-                <p style="text-align: right;"><strong>&nbsp;SR. JESSY</strong><br />(Vice Principal)</p>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -1554,189 +1478,25 @@
 <!--  School-info modal end -->
 
 
-<div id="fees" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<!--end modal-->
 
-            </div>
-            <div class="modal-body" >
-
-                <h4 class="modal-title">School Fees</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div id="gallery" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-            </div>
-            <div class="modal-body" >
-
-                <h4>Minimum 5 year teaching experience with computer knowledge</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="Achievement" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-            </div>
-            <div class="modal-body" >
-
-                <h4>Minimum 5 year teaching experience with computer knowledge</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div id="prev_principal_1" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-            </div>
-            <div class="modal-body" >
-
-                <h4>Minimum 5 year teaching experience with computer knowledge</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div id="prev_principal_2" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-            </div>
-            <div class="modal-body" >
-
-                <h4>Minimum 5 year teaching experience with computer knowledge</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="prev_principal_3" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-            </div>
-            <div class="modal-body" >
-
-                <h4>Minimum 5 year teaching experience with computer knowledge</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="prev_principal_4" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-            </div>
-            <div class="modal-body" >
-
-                <h4>Minimum 5 year teaching experience with computer knowledge</h4>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-<!-- Modals end -->
-
-</div>
 
 <!-- end Wrapper -->
 
-<!--
-    <style>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\jquery-2.1.0.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\bootstrap\js\bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\selectize.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\owl.carousel.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\jquery.validate.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\jquery.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\jQuery (1).js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\icheck.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\jquery.vanillabox-0.1.5.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\retina-1.1.0.js"></script>
 
-    .block{ padding-top: 60px;
-        }
-    </style>
--->
-
-
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-2.1.0.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-migrate-1.2.1.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/selectize.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/owl.carousel.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.validate.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jQuery (1).js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/icheck.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.vanillabox-0.1.5.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>assetss/js/retina-1.1.0.min.js"></script>
-
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/custom.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets\js\custom.js"></script>
 
 </body>
 </html>
+

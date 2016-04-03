@@ -2,12 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: Nitesh
- * Date: 4/2/2016
- * Time: 2:52 PM
+ * Date: 4/3/2016
+ * Time: 1:32 PM
  */
+
 ?>
-
-
 <!DOCTYPE html>
 
 <html lang="en-US">
@@ -27,10 +26,16 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css" type="text/css">
 
     <title>Ursuline Convent School</title>
+    <style>
+        .primary-navigation-wrapper:after{
+            height: 0px;
+        }
+    </style>
 
 </head>
 
-<body class="page-homepage-carousel">
+
+<body class="page-sub-page page-about-us">
 <!-- Wrapper -->
 <div class="wrapper">
     <!-- Header -->
@@ -45,14 +50,15 @@
                     </div><!-- /.input-group -->
                 </div>
                 <ul class="secondary-navigation list-unstyled">
-                    <!-- <li><a href="#">Prospective Students</a></li>
-                    <li><a href="#">Current Students</a></li>
-                    <li><a href="#">Faculty & Staff</a></li> -->
-                    <li><a href="https://slack-redir.net/link?url=https%3A%2F%2Fucsss.obto.co%2Fo" target="_blank">LOGIN</a></li>
+                    <!--  <li><a href="#">Prospective Students</a></li>
+                     <li><a href="#">Current Students</a></li>
+                     <li><a href="#">Faculty & Staff</a></li>
+                     <li><a href="#">Alumni</a></li> -->
+                    <li><a target="_blank"href="https://slack-redir.net/link?url=https%3A%2F%2Fucsss.obto.co%2Fo">LOGIN</a></li>
                     <li><a href="#school_info" data-toggle="modal">School info</a></li>
-                    <li><a href="fees.html">Fees</a></li>
-                    <li><a href="<?php echo base_url().'gallery/album' ?>">Gallery</a></li>
-                    <li><a href="Achievement.html">Achievement</a></li>
+                    <li><a href="">Fees</a></li>
+                    <li ><a style="color:#ea6645;" href="<?php echo base_url().'gallery/album';  ?>" >Gallery</a></li>
+                    <li><a href="">Achievement</a></li>
                 </ul>
             </div>
         </div><!-- /.secondary-navigation -->
@@ -67,17 +73,17 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-brand nav" id="brand">
-                            <a href="index.html"><img src="assets/img/logo-name.png" alt="brand" style="max-height:94px!important;margin-top:-20px;"></a>
+                            <a href="<?php echo base_url();  ?>"><img src="<?php echo base_url();  ?>assets/img/logo-name.png" alt="brand" style="max-height:94px!important;margin-top:-18px;"></a>
                         </div>
                     </div>
                     <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="index.html" class="#">Home</a>
+                            <li>
+                                <a href="<?php echo base_url();  ?>" class="#">Home</a>
 
                             </li>
                             <li>
-                                <a href="school.html" class="#">School</a>
+                                <a href="#" class="#">School</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Profile</a></li>
                                     <li><a href="#">Our Foundress</a></li>
@@ -109,7 +115,7 @@
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="news.html" class="#">News</a>
+                                <a href="" class="#">News</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Photo Gallery</a></li>
                                     <li><a href="#">Video Gallery</a></li>
@@ -120,7 +126,7 @@
                             </li>
 
                             <li>
-                                <a href="contact-us.html">Contact</a>
+                                <a href="">Contact</a>
                             </li>
                         </ul>
                     </nav><!-- /.navbar collapse-->
@@ -128,7 +134,16 @@
             </header><!-- /.navbar -->
         </div><!-- /.primary-navigation -->
         <div class="background">
-            <!--        <img src="assets/img/profile.jpg" alt="background">-->
+            <img src="<?php echo base_url();  ?>assets/img/background-city.png" alt="background">
         </div>
     </div>
     <!-- end Header -->
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Gallery</li>
+        </ol>
+    </div>
+    <!-- end Breadcrumb -->
