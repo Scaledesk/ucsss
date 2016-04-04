@@ -22,11 +22,11 @@
 		            <input type="password" class="form-control" placeholder="Password" name="password">
 		            <label class="checkbox">
 		                <span class="pull-right">
-		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+		                   <!-- <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>-->
 
 		                </span>
 		            </label>
-		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+		            <button class="btn btn-theme btn-block" href="" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
 		            <hr>
 
 		           <!-- <div class="login-social-link centered">

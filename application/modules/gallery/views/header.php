@@ -67,17 +67,17 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-brand nav" id="brand">
-                            <a href="index.html"><img src="assets/img/logo-name.png" alt="brand" style="max-height:94px!important;margin-top:-20px;"></a>
+                            <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo-name.png" alt="brand" style="max-height:94px!important;margin-top:-20px;"></a>
                         </div>
                     </div>
                     <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="index.html" class="#">Home</a>
+                                <a href="<?php echo base_url(); ?>" class="#">Home</a>
 
                             </li>
                             <li>
-                                <a href="school.html" class="#">School</a>
+                                <a href="<?php echo base_url().'gallery/school'; ?>" class="#">School</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Profile</a></li>
                                     <li><a href="#">Our Foundress</a></li>
@@ -90,7 +90,7 @@
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="event.html" class="#">Events</a>
+                                <a href="<?php echo base_url().'gallery/event'; ?>" class="#">Events</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Aim & Objectives</a></li>
                                     <li><a href="#">School Regulations</a></li>
@@ -102,14 +102,14 @@
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="about-us.html">About Us</a>
+                                <a href="<?php echo base_url().'gallery/aboutUs'; ?>">About Us</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Principal's Message</a></li>
                                     <li><a href="#">Vice Principal's Message</a></li>
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="news.html" class="#">News</a>
+                                <a href="<?php echo base_url().'gallery/news'; ?>" class="#">News</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Photo Gallery</a></li>
                                     <li><a href="#">Video Gallery</a></li>
@@ -120,7 +120,7 @@
                             </li>
 
                             <li>
-                                <a href="contact-us.html">Contact</a>
+                                <a href="<?php echo base_url().'gallery/contact'; ?>">Contact</a>
                             </li>
                         </ul>
                     </nav><!-- /.navbar collapse-->

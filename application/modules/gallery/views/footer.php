@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-2 col-sm-12">
                     <aside class="logo">
-                        <img src="assets/img/logo-footer.png" class="vertical-center">
+                        <img src="<?php echo base_url();  ?>assets/img/logo-footer.png" class="vertical-center">
                     </aside>
                 </div><!-- /.col-md-3 -->
                 <div class="col-md-4 col-sm-4">
@@ -86,7 +86,7 @@
                 <h4 class="modal-title">About School</h4>
             </div>
             <div class="modal-body"  style="overflow:auto; max-height: calc(100vh - 212px);">
-                <img src="assets/img/copy.jpg" alt=""  class="about_custom" />
+                <img src="<?php echo base_url();  ?>assets/img/copy.jpg" alt=""  class="about_custom" />
                 <p><strong>Ursuline Convent School</strong> is a Christian Institution established and administered by the religious Congregation of the Ursuline <strong>Sister of Mary Immaculate</strong>, founded on 17th February, 1649 at Piacenza in Italy by Blessed Mother Brigida Morello. The School aims at the education of the Catholic community around and extends its service to members of other communities to the extent possible. The school stands for academic excellence, development of skills and character-formation based on the love of God and the service of the people as modeled in Jesus Christ with a view to train citizens for remarkable all-round development and sincere commitment to God and country. Value Education given to all students aims at inculcating in them right values and attitudes.</p>
 
                 <p><strong>THE CURRICULUM</strong><br /><br />The school is affiliated to the <strong>CBSE (Central Board of Secondary Education, New Delhi).</strong> <br /><br />Formal teaching begins at class 1 level where subjects like English, Hindi, Maths, Environmental Studies, Art and Craft and Computer Studies are introduced. Sanskrit as third language is introduced at class V. <strong>NCERT</strong> syllabus is followed in the middle school classes and <strong>CBSE</strong> syllabus is followed in the senior classes.<br /><br />The school conducts special courses in <strong>physical training, Athletics, Karate, Music and Dance, Regular literary activities, picnics and Excursion </strong>form an integral part of the curriculum.<br /><br />The <strong>medium of instruction is English</strong> and the school will eventually provide education to both boys and girls for a 12-year course as under:<br /><br />Class I to V - Junior School<br />Class VI to VIII - Middle School<br />Class IX to XII - Senior School</p>

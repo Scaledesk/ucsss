@@ -26,11 +26,41 @@
                         </div>
 
                     </div>
-
                     <?php }?>
+<!--
+                    <div class="col-md-4 ">
+                        <div class="grid">
+                            <figure class="effect-steve">
+                                <img src="assets/img/New Gallery/1.jpg" alt="img29"/>
+                                <figcaption>
+                                    <h3>Morning Assembly by  <span>UKG-C  </span></h3>
+                                    <p>11th Feb, 2016 </p>
+                                    <a href="gallery_2.html">View more</a>
+                                </figcaption>
+                            </figure>
 
-                </div>
-                </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 ">
+                        <div class="grid">
+                            <figure class="effect-steve">
+                                <img src="assets/img/New Gallery/farewell_1.jpg" alt="img29"/>
+                                <figcaption>
+                                    <h3> Farewell for    <span>class XII - 2016</span></h3>
+                                    <p> 9th Feb, 2016 </p>
+                                    <a href="gallery_3.html">View more</a>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>-->
+
+
+                </div> </div>
 
                 <ul class="pagination custom_style_pagination">
                     <li>
@@ -109,4 +139,7 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>
+
+
+
 

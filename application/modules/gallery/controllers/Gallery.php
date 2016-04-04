@@ -41,4 +41,32 @@ class Gallery extends MX_Controller
       $this->load->view('album_photo',$data);
       $this->load->view('footer_album');
   }
+    public function school(){
+
+
+    $this->load->view('header_album');
+    $this->load->view('school');
+    $this->load->view('footer_album');
+}
+    public function event(){
+        $this->load->view('header_album');
+        $this->load->view('event');
+        $this->load->view('footer_album');
+    }
+
+    public function aboutUs(){
+        $this->load->view('header_album');
+        $this->load->view('about_us');
+        $this->load->view('footer_album');
+    }
+    public function news(){
+        $this->load->view('header_album');
+        $this->load->view('news');
+        $this->load->view('footer_album');
+    }
+    public function contact(){
+        $this->load->view('header_album');
+        $this->load->view('contact');
+        $this->load->view('footer_album');
+    }
 }

@@ -79,11 +79,11 @@
                     <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="<?php echo base_url();  ?>" class="#">Home</a>
+                                <a href="<?php echo base_url(); ?>" class="#">Home</a>
 
                             </li>
                             <li>
-                                <a href="#" class="#">School</a>
+                                <a href="<?php echo base_url().'gallery/school'; ?>" class="#">School</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Profile</a></li>
                                     <li><a href="#">Our Foundress</a></li>
@@ -96,7 +96,7 @@
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="event.html" class="#">Events</a>
+                                <a href="<?php echo base_url().'gallery/event'; ?>" class="#">Events</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Aim & Objectives</a></li>
                                     <li><a href="#">School Regulations</a></li>
@@ -108,14 +108,14 @@
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="about-us.html">About Us</a>
+                                <a href="<?php echo base_url().'gallery/aboutUs'; ?>">About Us</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Principal's Message</a></li>
                                     <li><a href="#">Vice Principal's Message</a></li>
                                 </ul>-->
                             </li>
                             <li>
-                                <a href="" class="#">News</a>
+                                <a href="<?php echo base_url().'gallery/news'; ?>" class="#">News</a>
                                 <!--<ul class="list-unstyled child-navigation">
                                     <li><a href="#">Photo Gallery</a></li>
                                     <li><a href="#">Video Gallery</a></li>
@@ -126,7 +126,7 @@
                             </li>
 
                             <li>
-                                <a href="">Contact</a>
+                                <a href="<?php echo base_url().'gallery/contact'; ?>">Contact</a>
                             </li>
                         </ul>
                     </nav><!-- /.navbar collapse-->
@@ -140,10 +140,10 @@
     <!-- end Header -->
 
     <!-- Breadcrumb -->
-    <div class="container">
+    <!--<div class="container">
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li class="active">Gallery</li>
         </ol>
-    </div>
+    </div>-->
     <!-- end Breadcrumb -->

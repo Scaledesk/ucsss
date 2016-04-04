@@ -40,7 +40,7 @@ class Admin extends MX_Controller
                 $data=['name'=>$this->Mdl_admin->getName(),'email'=> $this->Mdl_admin->getEmail()
                   ];
                 $this->session->set_userdata('user_data',$data);
-
+                $this->session->set_userdata('login_first',1);
                 setInformUser('success','Login successfully');
                 redirect(base_url('admin'));
             }
@@ -358,6 +358,41 @@ private function set_upload_options() {
         }
         else{
             setInformUser('error', 'Some Error occurred. Please try again.');
+            redirect(base_url('admin'));
+        }
+    }
+
+    public function password(){
+
+        if (islogin()) {
+
+            if (strtolower( $_SERVER['REQUEST_METHOD'] ) == 'post'){
+                $data=$this->input->post();
+                /*print_r($data);
+                      die;*/
+                $this->Mdl_admin->setData('password',$data['old_pass'],$data['new_pass']);
+
+                if ($this->Mdl_admin->password()) {
+                    setInformUser('success','your password has been successfully updated.');
+                    $this->session->sess_destroy();
+                    redirect(base_url('admin'));
+                }else{
+                    setInformUser('error','password does not match old password');
+                    redirect(base_url('admin/password'));
+                }
+
+
+
+
+            }
+            else{  $data['active']=4;
+                $this->load->view('header',$data);
+                $this->load->view('password');
+                $this->load->view('footer');
+            }
+        }
+        else{
+
             redirect(base_url('admin'));
         }
     }

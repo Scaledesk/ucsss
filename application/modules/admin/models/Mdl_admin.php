@@ -18,6 +18,24 @@ class Mdl_admin extends CI_model
   private $education;
   private $experience;
   private $fileName;
+    private $newPassword;
+
+    /**
+     * @return mixed
+     */
+    public function getNewPassword()
+    {
+        return $this->newPassword;
+    }
+
+    /**
+     * @param mixed $newPassword
+     */
+    public function setNewPassword($newPassword)
+    {
+        $this->newPassword = $newPassword;
+    }
+
 
     /**
      * @return mixed
@@ -201,6 +219,13 @@ class Mdl_admin extends CI_model
                     $this->setFileName(func_get_arg(3));
                     break;
                  }
+                case "password":{
+                    /* print_r(func_get_arg(1));die;*/
+                    $this->setPassword(func_get_arg(1));
+                    $this->setNewPassword(func_get_arg(2));
+
+                    break;
+                }
                 default:
                     break;
             }
@@ -294,5 +319,37 @@ public function create(){
 
     public function deletePhoto($id){
         return $this->db->where('gallery_photo_id',$id)->delete('ucsss_admin_gallery_photo');
+    }
+
+    public function password(){
+        $data = $this->db->where(array('ucsss_admin_email' =>$this->session->userdata['user_data']['email']))->select('ucsss_admin_pass')->get('ucsss_admin')->result_array();
+/*echo $this->db->last_query();
+print_r($data);die;*/
+        if($data) {
+            /*echo $this->newPassword;
+            print_r($data);die;*/
+            if (password_verify($this->password, $data[0]['ucsss_admin_pass'])){
+                $this->setNewPassword(password_hash($this->newPassword, PASSWORD_DEFAULT));
+
+                $data1=['ucsss_admin_pass'=>$this->getNewPassword()] ;
+
+             /* print_r($data1);
+                echo $this->password;
+                echo $data[0]['ucsss_admin_pass'];
+                die;*/
+                $data=$this->db->where('ucsss_admin_pass',$data[0]['ucsss_admin_pass'])->update('ucsss_admin',$data1);
+               /* print_r($data);die;*/
+                if ($data) {
+                   /* print_r($data);die;*/
+                    return true;
+                }else{
+                    return false;
+                }
+
+
+            }else {return false;}
+
+        }else { return false;}
+
     }
 }

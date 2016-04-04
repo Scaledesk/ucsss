@@ -18,7 +18,7 @@
 
                 <div class="form-group">
                     <label for="location">Photo :</label>
-                    <input type="file" name="photoname[]" class="form-control" id="location" multiple>
+                    <input type="file" name="photoname[]" required class="form-control" id="location" multiple>
                 </div>
 
 

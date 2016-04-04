@@ -15,18 +15,18 @@
             <form role="form" action="<?php echo base_url().'admin/album/'; ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="title">	Name:</label>
-                    <input type="text" name="name" class="form-control" id="title">
+                    <input type="text" name="name" required class="form-control" id="title">
                 </div>
 
                 <div class="form-group">
                     <label for="location">Photo :</label>
-                    <input type="file" name="filename" class="form-control" id="location">
+                    <input type="file" name="filename" required class="form-control" id="location">
                 </div>
 
                 <div class="form-group">
                     <label for="description">Description:</label>
 
-                    <textarea name="description" rows="6" class="form-control" ></textarea>
+                    <textarea name="description" rows="6" required class="form-control" ></textarea>
                 </div>
 
 

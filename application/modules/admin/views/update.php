@@ -17,18 +17,18 @@
             <form role="form" action="<?php echo base_url().'admin/update/'.$ablum[0]['album_id']; ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="title">	Name:</label>
-                    <input type="text" name="name" class="form-control" id="title" value="<?php echo $ablum[0]['album_name'] ?>">
+                    <input type="text" name="name" required class="form-control" id="title" value="<?php echo $ablum[0]['album_name'] ?>">
                 </div>
 
                 <div class="form-group">
                     <label for="location">Photo :</label>
-                    <input type="file" name="filename" class="form-control" id="location">
+                    <input type="file" name="filename" class="form-control" id="location" required>
                 </div>
 
                 <div class="form-group">
                     <label for="description">Description:</label>
 
-                     <textarea name="description" rows="6" class="form-control" ><?php echo $ablum[0]['album_description']; ?></textarea>
+                     <textarea name="description" rows="6" class="form-control" required ><?php echo $ablum[0]['album_description']; ?></textarea>
                 </div>
 
 

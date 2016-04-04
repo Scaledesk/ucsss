@@ -62,7 +62,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="<?php echo base_url().'admin'; ?>"><img src="<?php echo  asset_url();?>/img/final_logo.png" class="img-circle" width="60"></a></p>
+              	  <p class="centered"><a href="<?php echo base_url().'admin'; ?>"><img src="<?php echo  asset_url();?>admin/img/final_logo.png" class="img-circle" width="60"></a></p>
               	  <h5 class="centered">Admin</h5>
               	  	
                   <li class="mt">
@@ -82,13 +82,7 @@
                     
                   </li>-->
 
-                  <!--<li class="sub-menu">
-                      <a <?php /* if($active==4){ */?> class="active"<?php /*}*/?> href="<?php /*echo  base_url().'admin/getUsers';*/?>" >
-                          <i class="fa fa-tasks"></i>
-                          <span> Users Details</span>
-                      </a>
-                    
-                  </li>-->
+
 
                   <li  class="sub-menu">
                       <a <?php  if($active==3 or $active==2 ){ ?> class="active"<?php }?>  href="javascript:;" >
@@ -100,6 +94,14 @@
                           <li <?php  if($active==3){ ?> class="active"<?php }?> ><a    href="<?php echo  base_url().'admin/album'; ?>">Create Album</a></li>
                         <!--<li <?php /* if($active==4){ */?> class="active"<?php /*}*/?> ><a    href="<?php /*echo  base_url().''; */?>"></a></li>-->
                       </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a <?php  if($active==4){ ?> class="active"<?php }?> href="<?php echo  base_url().'admin/password';?>" >
+                          <i class="fa fa-cogs"></i>
+                          <span> Change Password</span>
+                      </a>
+
                   </li>
                  
               </ul>
@@ -141,8 +143,16 @@
       }else if(getInformUser()){
           ?>
           <div class="notification" id="notification" >
-              <h3>Welcome Admin</h3>
-              <p>   <?php /* echo getInformUser(); */?> </p>
+              <!--<h3>Welcome Admin</h3>
+              <p>   <?php /* echo getInformUser(); */?> </p>-->
+              <?php  if(islogin()){if  ($this->session->userdata['login_first']==1) {
+
+                  $this->session->set_userdata('login_first',0);
+
+                  ?><h3>Welcome User</h3>
+
+              <?php }} ?>
+              <p>   <?php  echo getInformUser(); ?> </p>
           </div>
 
 
