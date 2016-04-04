@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'http://ucsss.scaledesk.xyz',
-	'username' => 'nkscoder',
-	'password' => 'qazplmq1w2e3r4',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '084222252',
 	'database' => 'ucsss',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
