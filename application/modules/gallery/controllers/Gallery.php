@@ -108,10 +108,18 @@ class Gallery extends MX_Controller
 
       /* $this->Mdl_gallery->setData('album',$album_id);*/
        $this->session->set_userdata('album_id',$album_id);
-       $this->albumPhoto1();
+       redirect(base_url('gallery/albumPhoto1'));
    }
 
     public function albumPhoto1(){
+
+      /* if($album_id=$this->input->get('album_id'));*/
+       /* echo $album_id;
+
+        die;*/
+
+
+       /* $this->session->set_userdata('album_id',$album_id);*/
         $config = array();
         $config["base_url"] = base_url() . "gallery/albumPhoto1";
         $total_row = $this->Mdl_gallery->record_count_photo();

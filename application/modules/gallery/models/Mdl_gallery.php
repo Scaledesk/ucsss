@@ -145,8 +145,8 @@ class Mdl_gallery extends CI_model
         }
 
         // print_r(implode(',',$sliced_array[$i]));
-     /*   if(!isset($sliced_array[$i]))
-            return [];*/
+        if(!isset($sliced_array[$i]))
+            return [];
         $this->db->limit($limit);
         $this->db->where_in('gallery_photo_id',$sliced_array[$i]);
         $query = $this->db->get("ucsss_admin_gallery_photo");
@@ -155,9 +155,10 @@ class Mdl_gallery extends CI_model
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $row) {
                 $data[] = $row;
+               /* return $data;*/
             }
             /* print_r($data);die;*/
-            return $data;
+             return $data;
         }
         return false;
 

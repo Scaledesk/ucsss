@@ -35,7 +35,7 @@
                                     <figcaption>
                                         <h3><?php echo $row->album_name; ?></span></h3>
                                         <p><?php echo $row->album_description; ?></p>
-                                        <a href="<?php  echo base_url().'gallery/albumPhoto1/'.$row->album_id; ?>">View more</a>
+                                        <a href="<?php  echo base_url().'gallery/albumPhoto/'.$row->album_id; ?>">View more</a>
                                     </figcaption>
                                 </figure>
 
