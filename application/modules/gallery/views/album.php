@@ -11,21 +11,37 @@
                 <div class="col-md-12 custom_height">
                 <div class="gallery_section">
 
-                    <?php  foreach($album as $row){ ?>
+                  <!--  <?php /* foreach($album as $row){ */?>
                     <div class="col-md-4 ">
                         <div class="grid">
                             <figure class="effect-steve">
-                                <img src="<?php echo base_url()."uploads/".$row['album_photo']; ?>" alt="img29"/>
+                                <img src="<?php /*echo base_url()."uploads/".$row['album_photo']; */?>" alt="img29"/>
                                 <figcaption>
-                                    <h3><?php echo $row['album_name']; ?></span></h3>
-                                    <p><?php echo $row['album_description']; ?></p>
-                                    <a href="<?php  echo base_url().'gallery/albumPhoto/'.$row['album_id']; ?>">View more</a>
+                                    <h3><?php /*echo $row['album_name']; */?></span></h3>
+                                    <p><?php /*echo $row['album_description']; */?></p>
+                                    <a href="<?php /* echo base_url().'gallery/albumPhoto/'.$row['album_id']; */?>">View more</a>
                                 </figcaption>
                             </figure>
 
                         </div>
 
                     </div>
+                    --><?php /*}*/?>
+                    <?php  foreach($results as $row){ ?>
+                        <div class="col-md-4 ">
+                            <div class="grid">
+                                <figure class="effect-steve">
+                                    <img src="<?php echo base_url()."uploads/".$row->album_photo; ?>" alt="img29"/>
+                                    <figcaption>
+                                        <h3><?php echo $row->album_name; ?></span></h3>
+                                        <p><?php echo $row->album_description; ?></p>
+                                        <a href="<?php  echo base_url().'gallery/albumPhoto1/'.$row->album_id; ?>">View more</a>
+                                    </figcaption>
+                                </figure>
+
+                            </div>
+
+                        </div>
                     <?php }?>
 <!--
                     <div class="col-md-4 ">
@@ -63,7 +79,12 @@
                 </div> </div>
 
                 <ul class="pagination custom_style_pagination">
-                    <li>
+
+                     <?php foreach ($links as $link) {
+                            echo "<li>". $link."</li>";
+                        } ?>
+
+                    <!--<li>
                         <a href="#" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                         </a>
@@ -78,7 +99,7 @@
                         <a href="#" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
                 <!--
 

@@ -46,8 +46,10 @@
                 <div class="col-md-12" style="margin: 20px 0; padding-left: 0;">
 
                     <ul class="gallery-list">
-                        <?php foreach ($photo as $row){ ?>
-                        <li><a href="<?php echo base_url().'uploads/'.$row['gallery_photo'] ?>" class="image-popup"><img src="<?php echo base_url().'uploads/'.$row['gallery_photo'] ?>" alt=""></a></li>
+                        <?php
+                        $results=$results==false?[]:$results;
+                        foreach ($results as $row){ ?>
+                        <li><a href="<?php echo base_url().'uploads/'.$row->gallery_photo; ?>" class="image-popup"><img src="<?php echo base_url().'uploads/'.$row->gallery_photo; ?>" alt=""></a></li>
                         <?php }?>
                        <!-- <li><a href="assets/img/HRD2016_119.jpg" class="image-popup"><img src="assets/img/HRD2016_119.jpg" alt=""></a></li>
                         <li><a href="assets/img/HRD2016_118.jpg" class="image-popup"><img src="assets/img/HRD2016_118.jpg" alt=""></a></li>
@@ -68,22 +70,12 @@
 
                 <nav>
                     <ul class="pagination custom_style_pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
 
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
+                        <?php
+
+                        foreach ($links as $link) {
+                            echo "<li>". $link."</li>";
+                        } ?>
                     </ul>
                 </nav>
 
