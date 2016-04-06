@@ -98,11 +98,20 @@
     }else if(getInformUser()){
         ?>
         <div class="notification" id="notification" >
-            <h3>Welcome Admin</h3>
+            <?php if ($this->input->get('msg')){
+                echo '<p>'. $this->input->get('msg').'</p>';
+            } ?>
+
             <p>   <?php  echo getInformUser(); ?> </p>
         </div>
 
 
         <?php
-    }
+    } elseif($this->input->get('msg')){ ?>
+    <div class="notification" id="notification" >
+        <?php
+        echo '<p>'. $this->input->get('msg').'</p>';
+    ?>
+    </div>
+   <?php  }
     ?>

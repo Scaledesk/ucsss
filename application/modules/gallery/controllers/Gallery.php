@@ -152,4 +152,14 @@ class Gallery extends MX_Controller
         $this->load->view('album_photo',$data);
         $this->load->view('footer_album');
     }
+   public function fees(){
+       $this->load->view('header_album');
+       $this->load->view('fees');
+       $this->load->view('footer_album');
+   }
+   public function achievement(){
+       $this->load->view('header_album');
+       $this->load->view('achievement');
+       $this->load->view('footer_album');
+   }
 }

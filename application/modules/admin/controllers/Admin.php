@@ -373,9 +373,10 @@ private function set_upload_options() {
                 $this->Mdl_admin->setData('password',$data['old_pass'],$data['new_pass']);
 
                 if ($this->Mdl_admin->password()) {
-                    setInformUser('success','your password has been successfully updated.');
                     $this->session->sess_destroy();
-                    redirect(base_url('admin'));
+                    /*setInformUser('success','your password has been successfully updated. Please login new password ');
+                     */
+                    redirect(base_url('admin?msg=your password has been successfully updated. Please login new password'));
                 }else{
                     setInformUser('error','password does not match old password');
                     redirect(base_url('admin/password'));

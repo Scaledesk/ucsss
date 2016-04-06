@@ -50,9 +50,9 @@
                     <li><a href="#">Faculty & Staff</a></li> -->
                     <li><a href="https://slack-redir.net/link?url=https%3A%2F%2Fucsss.obto.co%2Fo" target="_blank">LOGIN</a></li>
                     <li><a href="#school_info" data-toggle="modal">School info</a></li>
-                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="<?php echo base_url().'gallery/fees' ?>">Fees</a></li>
                     <li><a href="<?php echo base_url().'gallery/album' ?>">Gallery</a></li>
-                    <li><a href="Achievement.html">Achievement</a></li>
+                    <li><a href="<?php echo base_url().'gallery/achievement' ?>">Achievement</a></li>
                 </ul>
             </div>
         </div><!-- /.secondary-navigation -->
@@ -67,7 +67,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-brand nav" id="brand">
-                            <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo-name.png" alt="brand" style="max-height:94px!important;margin-top:-20px;"></a>
+                            <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo-name.png" alt="brand" style="max-height:80px!important;margin-top:-20px;"></a>
                         </div>
                     </div>
                     <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
