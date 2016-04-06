@@ -126,7 +126,7 @@
 
 
                         </div><!-- /.section-content -->
-                        <a href="news.html" class="read-more stick-to-bottom">All News</a>
+                        <a href="<?php echo base_url().'gallery/news' ?>" class="read-more stick-to-bottom">All News</a>
                     </section><!-- /.news-small -->
                 </div><!-- /.col-md-4 -->
                 <div class="col-md-4 col-sm-6">
@@ -173,7 +173,7 @@
                                 </aside>
                             </article><!-- /article -->
                         </div><!-- /.section-content -->
-                        <a href="event.html" class="read-more stick-to-bottom">All Events</a>
+                        <a href="<?php echo base_url().'gallery/event'; ?>" class="read-more stick-to-bottom">All Events</a>
                     </section><!-- /.events-small -->
                 </div><!-- /.col-md-4 -->
                 <div class="col-md-4 col-sm-12">

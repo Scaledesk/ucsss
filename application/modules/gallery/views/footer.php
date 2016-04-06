@@ -54,7 +54,7 @@
                         <p>Ursuline Convent School is a Christian Institution established and administered by the religious Congregation of the Ursuline Sister of Mary Immaculate, founded on 17th February, 1649 at Piacenza in Italy by Blessed Mother Brigida Morello.
                         </p>
                         <div>
-                            <a href="news.html" class="read-more">All News</a>
+                            <a href="<?php echo base_url().'gallery/news' ?>" class="read-more">All News</a>
                         </div>
                     </aside>
                 </div><!-- /.col-md-3 -->
