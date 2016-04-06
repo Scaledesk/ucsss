@@ -11,8 +11,8 @@
 <!-- Breadcrumb -->
 <div class="container">
     <ol class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="event.html">Events</a></li>
+        <li><a href="<?php echo base_url();?>">Home</a></li>
+        <li><a href="<?php echo base_url().'gallery/event';?>">Events</a></li>
         <li class="active">Calendar</li>
     </ol>
 </div>

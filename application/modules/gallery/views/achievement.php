@@ -12,7 +12,7 @@
 <!-- Breadcrumb -->
 <div class="container">
     <ol class="breadcrumb">
-        <li><a href="<?php echo base_url()?>">Home</a></li>
+        <li><a href="<?php echo base_url();?>">Home</a></li>
         <li class="active">Achievement</li>
     </ol>
 </div>
