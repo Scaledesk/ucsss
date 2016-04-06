@@ -11,7 +11,7 @@
 <!-- Breadcrumb -->
 <div class="container">
     <ol class="breadcrumb">
-        <li><a href="<?php base_url(); ?>">Home</a></li>
+        <li><a href="<?php echo base_url(); ?>">Home</a></li>
         <li class="active">News</li>
     </ol>
 </div>

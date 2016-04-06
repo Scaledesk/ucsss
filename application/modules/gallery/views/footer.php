@@ -39,11 +39,11 @@
                     <aside>
                         <header><h4>Important Links</h4></header>
                         <ul class="list-links">
-                            <li><a href="school.html">School</a></li>
-                            <li><a href="event.html">Events</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="contact-us.html">Contact us</a></li>
+                            <li><a href="<?php echo base_url().'gallery/school';?>">School</a></li>
+                            <li><a href="<?php echo base_url().'gallery/event';?>">Events</a></li>
+                            <li><a href="<?php echo base_url().'gallery/aboutUs';?>">About us</a></li>
+                            <li><a href="<?php echo base_url().'gallery/news';?>">News</a></li>
+                            <li><a href="<?php echo base_url().'gallery/contact';?>">Contact us</a></li>
                             <!-- <li><a href="#">Admission Procedure</a></li> -->
                         </ul>
                     </aside>
